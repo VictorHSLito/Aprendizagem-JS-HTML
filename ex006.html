@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo o DOM</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background-color: rgb(82, 122, 156);
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+        Começando
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'yellow'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
