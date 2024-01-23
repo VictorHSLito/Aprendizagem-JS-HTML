@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"> 
     <title>Modelo</title>
 </head>
+
+
 <body>
-    <div>
+    <header>
+        <div>
+            <h1>Vamos Contar</h1>
+        </div>
+    </header>
+    <section>
+        <div>
+            <p>Início:</p>
+            <input type="number" name="inicio" id="inicio" min="0">            
+        </div>
+    
+        <div>
+            <p>Fim:</p>
+            <input type="number" name="fim" id="fim">
+        </div>
 
-    </div>
+        <div>
+            <p>Passo:</p>
+            <input type="number" name="passo" id="passo">            
+        </div>
 
-    <div>
-
-    </div>
-
+        <div>
+            <button>Contar</button>
+        </div>
+    </section>
+    
     <footer>
         <p>Feito por Victor</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
