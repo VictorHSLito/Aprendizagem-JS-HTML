@@ -7,5 +7,15 @@ function contar(){
     if (n1.value.length == 0 || n2.value.length == 0 || passo.value.length == 0) {
         window.alert("ERRO! Estão faltando valores")
     }
+    else {
+        res.innerHTML = 'Contando: '
+        let ini = Number(n1.value)
+        let f = Number(n2.value)
+        let cont = Number(passo.value)
+
+        for (let c = ini; c <= f; c += cont) {
+            res.innerHTML += `${c} 👉`
+        }   
+    }
 
 }
