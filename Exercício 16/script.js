@@ -14,7 +14,7 @@ function contar(){
         let cont = Number(passo.value)
 
         for (let c = ini; c <= f; c += cont) {
-            res.innerHTML += `${c} 👉`
+            res.innerHTML += `${c} 👉` 
         }   
     }
 
