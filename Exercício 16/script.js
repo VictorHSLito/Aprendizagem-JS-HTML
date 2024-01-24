@@ -8,11 +8,15 @@ function contar(){
         window.alert("ERRO! Estão faltando valores")
     }
     else {
-        res.innerHTML = 'Contando: '
+        res.innerHTML = 'Contando: <br> '
         let ini = Number(n1.value)
         let f = Number(n2.value)
         let cont = Number(passo.value)
         
+        if (cont <= 0) {
+            window.alert("Passo inválido! Impossível contar! [Considerando passo 1]")
+            cont = 1
+        }
         if (ini < f) {
             for (let c = ini; c <= f; c += cont) {
                 res.innerHTML += `${c} 👉`  // Pode ser usada também a formatação unicode, ex: \u{1F449}
