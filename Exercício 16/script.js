@@ -27,8 +27,9 @@ function contar(){
             for (let c = ini; c >= f; c-= cont) {
                 res.innerHTML += `${c} 👉`
             }
-        }
             res.innerHTML += `🏁`
+        }
+            
     }
 
 }
