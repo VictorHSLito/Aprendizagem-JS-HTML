@@ -12,10 +12,19 @@ function contar(){
         let ini = Number(n1.value)
         let f = Number(n2.value)
         let cont = Number(passo.value)
-
-        for (let c = ini; c <= f; c += cont) {
-            res.innerHTML += `${c} 👉` 
-        }   
+        
+        if (ini < f) {
+            for (let c = ini; c <= f; c += cont) {
+                res.innerHTML += `${c} 👉`  // Pode ser usada também a formatação unicode, ex: \u{1F449}
+            }   
+            res.innerHTML += `🏁`
+        }
+        else {
+            for (let c = ini; c >= f; c-= cont) {
+                res.innerHTML += `${c} 👉`
+            }
+        }
+            res.innerHTML += `🏁`
     }
 
 }
