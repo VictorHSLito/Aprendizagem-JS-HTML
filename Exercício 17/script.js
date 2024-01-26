@@ -9,10 +9,11 @@ function tabuada() {
         let n = Number(num.value)
         var cont = 1
         tab.innerHTML = ''
-        
+
         while (cont < 11) {
             let item = document.createElement('option')
             item.text = `${n} x ${cont} = ${n*cont}`
+            item.value = `tab${cont}`
             tab.appendChild(item)
             cont++
         }
