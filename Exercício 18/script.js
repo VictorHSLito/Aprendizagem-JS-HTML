@@ -5,22 +5,29 @@ var result = document.getElementById('resultado')
 var valores = []
 
 
-function adiciona () {
-        for (var c = 0; c < lista.length + 1; c++) {
-        lista[c] = Number(a)
-    }
-    }
-    if (Number(a) in lista) {
-        alert("Número já na lista")
+function isNumero() {
+    if(Number(n) >= 1 && Number(n) <= 100) {
+        return true
     }
     else {
-        console.log(lista)
+        return false
     }
+}
 
-    if (Number(a) == 0 || Number(a) < 0) {
-        alert("Número inválido!")
-    }               
-        
+function inLista() {
+    if(l.indexOf(Number(n)) != -1) {
+        return true
+    }
     else {
-        console.log("Tudo okay")
+        return false
+    }
+}
+
+function adiciona () {
+    if(isNumero(num.value) && !inLista(num.value)) {
+        alert("Tudo funcionando")
+    }
+    else {
+        alert("Valor inválido ou já na está incluso na lista!")
+    }
     }
